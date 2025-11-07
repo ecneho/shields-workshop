@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-STEAM_TEMPLATE = "https://img.shields.io/steam/update-date/{steam_id}?style=for-the-badge&logo=steam&label=last%20updated%20%20⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+STEAM_TEMPLATE = "https://img.shields.io/steam/update-date/{steam_id}?style=for-the-badge&logo=steam&label=last%20updated%20%20⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 
 @app.route('/b/sud/<id>')
 def steam(id):
@@ -16,7 +16,7 @@ def steam(id):
     else:
         return "Failed to fetch", 500
 
-DISCORD_TEMPLATE = "https://img.shields.io/discord/{discord_id}?style=for-the-badge&logo=discord&logoColor=white&color=cornflowerblue&label=discord%20server⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+DISCORD_TEMPLATE = "https://img.shields.io/discord/{discord_id}?style=for-the-badge&logo=discord&logoColor=white&color=cornflowerblue&label=discord%20server⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 
 @app.route('/b/d/<id>')
 def discord(id):
@@ -29,7 +29,7 @@ def discord(id):
     else:
         return "Failed to fetch", 500
 
-PATREON_TEMPLATE = "https://img.shields.io/endpoint?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%2F%3Fusername%3D{patreon_id}%26type%3Dpatrons&style=for-the-badge&logo=patreon&label=patreon%20⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
+PATREON_TEMPLATE = "https://img.shields.io/endpoint?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%2F%3Fusername%3D{patreon_id}%26type%3Dpatrons&style=for-the-badge&logo=patreon&label=patreon%20⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
 
 @app.route('/b/p/<id>')
 def patreon(id):
